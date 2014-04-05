@@ -1,0 +1,23 @@
+{
+	"name": "mysql-cluster",
+	"version": "0.0.1",
+	"description": "A simple wrapper to the main mysql driver with easy support of mysql master/slave server setup",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+	},
+	"repository": "https://github.com/akayami/mysql-cluster",
+	"keywords": ["Node.js", "mysql", "master", "slave", "wrapper"],
+	"author": "Tomasz Rakowski",
+	"license": "MIT",
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"mysql": "2.1.1",
+		"merge": "1.1.2"
+	},
+	"devDependencies" : {
+		"mocha" : "1.18.2",
+		"should" : "3.2.0",
+		"chai" : "*"
+	}
+}
