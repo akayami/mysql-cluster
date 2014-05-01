@@ -4,8 +4,6 @@ mysql-cluster
 A wrapper around mysql standard driver. Supports a PoolCluster setup with easy master/slave switching.
 
 ```
-var mysql = require('mysql');
-
 // Sample config
 var config = {
 	cluster : {
@@ -45,7 +43,7 @@ var config = {
 	}
 }
 
-var cluster = require("../lib/index.js")(config);
+var cluster = require("mysql-cluster")(config);
 
 // Aquire connection to one of nodes inside "slave".
 cluster.slave(function(err, conn) {			
