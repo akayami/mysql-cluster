@@ -1,6 +1,6 @@
 {
 	"name": "mysql-cluster",
-	"version": "0.0.4",
+	"version": "0.1.2",
 	"description": "A simple wrapper to the main mysql driver with easy support of mysql master/slave server setup",
 	"main": "lib/index.js",
 	"scripts": {
