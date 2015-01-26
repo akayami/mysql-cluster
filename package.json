@@ -12,8 +12,8 @@
 	"license": "MIT",
 	"readmeFilename": "README.md",
 	"dependencies": {
-		"mysql": "2.x",
-		"merge": "1.1.2"
+		"mysql": "^2.x",
+		"merge": "^1.x"
 	},
 	"devDependencies" : {
 		"mocha" : "1.21.4",
