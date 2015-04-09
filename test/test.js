@@ -201,6 +201,18 @@ describe("MySQL Cluster", function() {
 		});
 	});
 	
+	it('should be able to write into table using shorcut insert method', function(done) {
+		master.insert('test', {test: 'hello'}, function(err, result) {
+			if(err) {
+				done(err)
+			} else {
+				if(result.insertId) {
+					done();
+				}
+			}
+		});
+	});
+	
 	it('should NOT be able to write into table usign slave connection', function(done) {
 		slave.query('INSERT INTO ?? SET `test`=?', ['test', 'hello'], function(err, result) {
 			if(err) {
