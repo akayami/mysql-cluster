@@ -1,23 +1,29 @@
 {
-	"name": "mysql-cluster",
-	"version": "0.2.1",
-	"description": "A simple wrapper to the main mysql driver with easy support of mysql master/slave server setup",
-	"main": "lib/index.js",
-	"scripts": {
-		"test": "mocha -R spec"
-	},
-	"repository": "https://github.com/akayami/mysql-cluster",
-	"keywords": ["Node.js", "mysql", "master", "slave", "wrapper"],
-	"author": "Tomasz Rakowski",
-	"license": "MIT",
-	"readmeFilename": "README.md",
-	"dependencies": {
-		"mysql": "^2.x",
-		"merge": "^1.x"
-	},
-	"devDependencies" : {
-		"mocha" : "1.21.4",
-		"should" : "*",
-		"chai" : "*"
-	}
+  "name": "mysql-cluster",
+  "version": "0.3.0",
+  "description": "A simple wrapper to the main mysql driver with easy support of mysql master/slave server setup",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": "https://github.com/akayami/mysql-cluster",
+  "keywords": [
+    "Node.js",
+    "mysql",
+    "master",
+    "slave",
+    "wrapper"
+  ],
+  "author": "Tomasz Rakowski",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "merge": "^1.x",
+    "mysql2": "^0.15.x"
+  },
+  "devDependencies": {
+    "mocha": "1.21.4",
+    "should": "*",
+    "chai": "*"
+  }
 }
