@@ -48,7 +48,7 @@ var config = {
 //console.log(config.pools.master.config);
 //console.log(config.pools.slave);
 
-var mysql = require('mysql');
+//var mysql = require('mysql2');
 
 describe("MySQL Cluster", function() {
 	var serviceConn;
