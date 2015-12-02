@@ -6,8 +6,11 @@ mysql-cluster
 A wrapper around mysql standard driver. Supports a PoolCluster setup with easy master/slave switching.
 
 ```
+var mysql = require('mysql2');
+
 // Sample config
 var config = {
+	driver: mysql,		// Optional parameter. You can use a version of mysql or mysql2. Default mysql2 will be used when omitted.
 	cluster : {
 		canRetry : true,
 		removeNodeErrorCount : 5,
@@ -48,7 +51,7 @@ var config = {
 var cluster = require("mysql-cluster")(config);
 
 // Aquire connection to one of nodes inside "slave".
-cluster.slave(function(err, conn) {			
+cluster.slave(function(err, conn) {
 	if(!err) {
 		conn.query('select * from test limit 10', function(err, result, fields) {
 			// do something

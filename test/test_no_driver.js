@@ -9,7 +9,6 @@ var expect = require('chai').expect;
 var testDbName = "mysqlcluster_testDbName"
 
 var config = {
-	driver: mysql,
 	cluster : {
 		canRetry : true,
 		removeNodeErrorCount : 5,
