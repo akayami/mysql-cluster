@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/akayami/mysql-cluster.svg?branch=master)](https://travis-ci.org/akayami/mysql-cluster)
 mysql-cluster
 =============
 
